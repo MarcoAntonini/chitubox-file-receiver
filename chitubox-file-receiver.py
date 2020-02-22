@@ -137,15 +137,15 @@ while True:
 
         # Delete File Request
         elif 'M30' in str(message) and not message[messageLen-1] == '\x83':
-            filename= str(message).replace('M30 ',"")
+            filename = str(message).replace('M30 ',"")
             fp.close()
             fileTransferStarted = False
             try:
-                os.remove(filename)
-                resp = "File deleted :{0} \n".format(filename.replace(FILEPATH,''))
+                os.remove(FILEPATH+filename)
+                resp = "File deleted :{0} \n".format(filename)
                 s.sendto(resp, address)
             except:
-                resp = "Delete failed :{0} \n".format(filename.replace(FILEPATH,''))
+                resp = "Delete failed :{0} \n".format(filename)
 
             s.sendto(resp, address)
 

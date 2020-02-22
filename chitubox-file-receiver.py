@@ -74,7 +74,7 @@ while True:
                     if FILES_ACCEPT[i] in filename:
                         accepted = True
                         break
-                    if upper(FILES_ACCEPT[i]) in filename:
+                    if FILES_ACCEPT[i].upper() in filename:
                         accepted = True
                         break
 

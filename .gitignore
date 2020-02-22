@@ -1,0 +1,9 @@
+# OS
+applet/
+*.DS_Store
+
+# Visual Studio Code
+.vscode
+
+# Python
+__pycache__

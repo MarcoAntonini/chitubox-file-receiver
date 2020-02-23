@@ -3,6 +3,7 @@
 # Chitubox File Receiver
 #
 # author: Marco Antonini marcomail.anto@gmail.com
+# author: Ray Ramirez rramirez@revnull.com
 #
 
 import os
